@@ -1,0 +1,210 @@
+html {
+    box-sizing: border-box;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1b1e2523;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    font-weight: 600;
+    color: #1b1e25;
+    align-content: center;
+    gap: 15px;
+}
+.li-1::before {
+    content: '🚀';
+}
+.li-2::before {
+    content: '🔍';
+}
+.li-3::before {
+    content: '🌎';
+}
+.li-4::before {
+    content: '🧱';
+}
+.li-5::before {
+    content: '🎁';
+}
+.li-6::before {
+    content: '🏦';
+}
+.li-7::before {
+    content: '⛽';
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    color: #1b1e25d0;
+    text-shadow: 1px 1px 2px #1b1e25c0;
+}
+h1 div:last-child{
+    color: rgba(255, 0, 0, 0.842);
+}
+.section-one {
+    background: linear-gradient(  #ffffffc4, #dfdedec4);
+    overflow-x: hidden;
+    display: flex;
+    gap: 50px;
+    
+}
+.section-one a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+} .img-container-4 a img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+}
+.section-one a{
+    animation: scrollInfinite 15s linear infinite;
+} 
+@keyframes scrollInfinite {
+    0%{
+        transform: translateX(0%);
+    }100%{
+        transform: translateX(calc(-100px * 8));
+    }
+}
+.section-four a:hover, button:hover {
+    filter: saturate(100%);
+    transform: scale(1.2);
+}
+
+.section-two, .section-three, .section-six, .section-seven, .section-eigth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffffc4;
+    gap: 30px;
+}
+
+.img-container-2, .img-container-3, .img-container-6, .img-container-7, .img-container-8 {
+    border-radius: 30px;
+    max-width: 300px;
+    max-height: 280px;
+}
+.container-2, .container-3, .container-6, .container-7, .container-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    gap: 20px;
+}
+.section-four {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffffc4;
+    gap: 30px;
+} 
+.container-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+.section-four div a{
+    filter: saturate(50%);
+}
+.img-container-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.img-container-4 a img {
+    border-radius: 120px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+iframe {
+    width: 300px;
+    height: 280px;
+}
+.section-five{
+    text-align: center;
+}
+.section-seven, .section-eigth {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.container-5 {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}  
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.5rem;
+    background: linear-gradient(#dfdedec4, #ffffffc4 );
+}
+footer ul {
+    
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+footer ul li a img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    z-index: 15;
+    background: rgba(0, 255, 255, 0.034);
+    font-weight: 600;
+    
+}
+a {
+    text-decoration: none;
+    color: #1b1e25;
+}
+@media (max-width: 767px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-two, .section-three, .section-six, .section-seven, .section-eigth {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+       .section-two, .section-three, .section-six, .section-seven, .section-eigth {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1024px) {
+
+}
+
